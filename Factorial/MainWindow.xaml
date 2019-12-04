@@ -1,0 +1,20 @@
+﻿<Window x:Class="Factorial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Factorial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="398*"/>
+            <RowDefinition Height="37*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="textBox_Numbers" HorizontalAlignment="Left" Margin="330,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="26"/>
+        <Label Content="Введите 10 чисел через запятую" HorizontalAlignment="Left" Margin="308,148,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Name="label_factorialResult" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="64,303,0,0" VerticalAlignment="Top" Width="680" Height="24"/>
+        <Button Content="Расчитать факториал чисел" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Width="800" Height="37" Click="calculateFactorial_click"/>
+
+    </Grid>
+</Window>
